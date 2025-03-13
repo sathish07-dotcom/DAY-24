@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+    <style>
+        body {
+            background-color: rgb(241, 199, 206);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1{
+            color: red;
+            text-align: center;
+            font-size: 40px;
+            text-decoration: underline green;
+        }
+        .container{
+            border: 2px green solid;
+            height: 220vh;
+        }
+        h3,li{
+            color: brown;
+        }
+        h5,h2{
+            color: blue;
+        }
+     
+        p{
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Array in js</h1>
+    <h3>In JavaScript, an array is a data structure that can store a collection of elements, which can be of any type, <br>including numbers, strings, objects, and even other arrays.</h3>
+    <div class="container">
+       
+
+        <h2>Creating an Array:</h2>
+        <p>You can create an array in JavaScript using the following methods:</p>
+        
+         <h3><li>Using array literals</li></h3>
+           <p>let fruits = ["apple", "banana", "cherry"];</p>
+           
+        
+        <h3><li>Using the `Array` constructor</li></h3>
+          <p>
+           let fruits = new Array("apple", "banana", "cherry");</p>
+        
+        
+        <h2>Accessing Array Elements</h2>
+        <li>You access elements in an array using their index. <br> Arrays in JavaScript are zero-indexed, meaning the first element is at index 0.</li>
+        
+        <p>
+        let fruits = ["apple", "banana", "cherry"]; <br>
+        console.log(fruits[0]);  // Output: "apple" <br>
+        console.log(fruits[1]);  // Output: "banana"</p>
+     
+        
+        <h2>Array Length:</h2>
+        <li>You can get the number of elements in an array using the `length` property.</li>
+        
+      <p>
+        let fruits = ["apple", "banana", "cherry"]; <br>
+        console.log(fruits.length);  // Output: 3</p>
+       
+        
+        <h2>Modifying Array Elements:</h2>
+        <li>You can change the value of an array element by accessing it through its index and assigning a new value.</li>
+        
+        <p>let fruits = ["apple", "banana", "cherry"]; <br>
+        fruits[1] = "blueberry";  // Modify the second element <br>
+        console.log(fruits);  // Output: ["apple", "blueberry", "cherry"]</p>
+        <h2>Common Array Methods:</h2>
+        <p>JavaScript arrays come with several useful methods:</p>
+        
+        <li>push() Adds one or more elements to the end of the array.</li>
+           <p>
+           let fruits = ["apple", "banana"]; <br>
+           fruits.push("cherry");  // Add "cherry" to the end <br>
+           console.log(fruits);  // Output: ["apple", "banana", "cherry"]</p>
+           
+        
+        <li>pop() Removes the last element from the array.</li>
+           <p>
+           let fruits = ["apple", "banana", "cherry"]; <br>
+           fruits.pop();  // Removes "cherry" <br>
+           console.log(fruits);  // Output: ["apple", "banana"]</p>
+           
+           <li>shift() Removes the first element from the array.</li>
+           <p>
+           let fruits = ["apple", "banana", "cherry"]; <br>
+           fruits.shift();  // Removes "apple" <br>
+           console.log(fruits);  // Output: ["banana", "cherry"]</p>
+          
+        
+        <li>unshift() Adds one or more elements to the beginning of the array.</li>
+        <p>
+           let fruits = ["banana", "cherry"]; <br>
+           fruits.unshift("apple");  // Add "apple" to the beginning <br>
+           console.log(fruits);  // Output: ["apple", "banana", "cherry"]</p>
+
+        
+        <li>splice() Adds/removes elements from an array at a specific index.</li>
+           <p>
+           let fruits = ["apple", "banana", "cherry"]; <br>
+           fruits.splice(1, 1, "blueberry", "kiwi");  // Remove 1 element at index 1 and add two new elements <br>
+           console.log(fruits);  // Output: ["apple", "blueberry", "kiwi", "cherry"]</p>
+         
+         <li>forEach() Executes a provided function once for each element in the array.</li>
+         <p>
+           let fruits = ["apple", "banana", "cherry"]; <br>
+           fruits.forEach(fruit => console.log(fruit)); <br>
+           // Output: 
+           // apple
+           // banana
+           // cherry</p>
+          
+        
+        <li>map() Creates a new array populated with the results of calling a provided function on every element in the array.</li>
+         <p>
+           let fruits = ["apple", "banana", "cherry"]; <br>
+           let upperCaseFruits = fruits.map(fruit => fruit.toUpperCase()); <br>
+           console.log(upperCaseFruits);  // Output: ["APPLE", "BANANA", "CHERRY"]</p>
+         
+        
+        <li>filter() Creates a new array with all elements that pass the test implemented by the provided function.</li>
+          <p>
+           let numbers = [1, 2, 3, 4, 5]; <br>
+           let evenNumbers = numbers.filter(number => number % 2 === 0); <br>
+           console.log(evenNumbers);  // Output: [2, 4]</p>
+           
+        
+        <li>find() Returns the first element in the array that satisfies the provided testing function.</li>
+           <p>
+           let numbers = [1, 2, 3, 4, 5]; <br>
+           let firstEven = numbers.find(number => number % 2 === 0); <br>
+           console.log(firstEven);  // Output: 2</p>
+    </div>
+    <h1><a href="./practice problems.html">More</a></h1>
+
+
+   <script src="script.js"></script>
+</body>
+
+</html>

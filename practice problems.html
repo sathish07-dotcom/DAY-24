@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            color: red;
+            text-align: center;
+            font-size: 50px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Open console</h1>
+    <script>
+        
+        let month = ['jan','july','march','august'];
+        console.log(month);
+        month.shift(); //month[0] = 'july';
+        month.shift(); //month[1] ='june';
+        console.log(month) //console.log(month)
+        month.unshift('july','june');
+        console.log(month)   
+        
+        let start = ['jan','july','march','aug'];
+        console.log('Before Splice=',start);
+        start.splice (0,2 ,'july','june');
+        console.log(start);
+
+        let tech =['c','c++','html','javascript','python','java','c#','sql'];
+        console.log(tech);
+        console.log(tech.indexOf('javascript'));
+        console.log(tech.reverse());
+        console.log(tech.indexOf('javascript'));
+
+        let nArr = [['x',null,'o'],[null,'x',null],['o',null,'x']];
+        console.log(nArr);
+        console.log(nArr[0]);
+        console.log(nArr[0][1]='O');
+        console.log(nArr);
+        
+        
+        
+      
+        
+
+
+    </script>
+</body>
+</html>
